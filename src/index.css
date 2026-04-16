@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 340 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 340 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 340 20% 15%;
+
+    --primary: 340 65% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 340 30% 95%;
+    --secondary-foreground: 340 20% 25%;
+
+    --muted: 340 15% 96%;
+    --muted-foreground: 340 10% 50%;
+
+    --accent: 340 40% 92%;
+    --accent-foreground: 340 30% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 340 20% 90%;
+    --input: 340 20% 90%;
+    --ring: 340 65% 55%;
+
+    --radius: 0.75rem;
+
+    --rose-light: 340 50% 97%;
+    --rose-medium: 340 40% 90%;
+    --gold: 38 70% 55%;
+    --gold-foreground: 0 0% 100%;
+    --sage: 160 20% 45%;
+    --sage-foreground: 0 0% 100%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(340 50% 97%), hsl(340 40% 92%), hsl(30 40% 96%));
+    --gradient-primary: linear-gradient(135deg, hsl(340 65% 55%), hsl(340 55% 45%));
+    --gradient-warm: linear-gradient(135deg, hsl(340 50% 97%), hsl(30 50% 97%));
+
+    --shadow-soft: 0 4px 20px -4px hsl(340 30% 50% / 0.1);
+    --shadow-medium: 0 8px 30px -8px hsl(340 30% 50% / 0.15);
+    --shadow-card: 0 2px 12px -2px hsl(340 30% 50% / 0.08);
+
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 340 65% 55%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 340 40% 95%;
+    --sidebar-accent-foreground: 340 20% 25%;
+    --sidebar-border: 340 20% 90%;
+    --sidebar-ring: 340 65% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .bg-warm-gradient {
+    background: var(--gradient-warm);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.5s ease-out forwards;
+}
+
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-400 { animation-delay: 0.4s; }
+.animation-delay-600 { animation-delay: 0.6s; }
