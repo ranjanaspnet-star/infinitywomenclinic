@@ -1,0 +1,6 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="#FDE8EE" />
+  <path d="M0 400C100 350 200 450 300 420C400 390 500 330 600 350C700 370 800 430 900 400C1000 370 1100 330 1200 360V800H0V400Z" fill="#FFD4E4" opacity="0.8" />
+  <path d="M0 470C150 420 300 520 450 490C600 460 750 410 900 430C1050 450 1200 420 1200 420V800H0V470Z" fill="#FFDAE7" opacity="0.8" />
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#9F2D5B" font-family="Inter, sans-serif" font-size="56">Replace with your hero image</text>
+</svg>

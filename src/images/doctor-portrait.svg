@@ -1,0 +1,6 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="#FCE8F3" />
+  <circle cx="600" cy="300" r="180" fill="#FFC7DD" />
+  <rect x="380" y="520" width="440" height="170" rx="80" fill="#FFD4E4" />
+  <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" fill="#9F2D5B" font-family="Inter, sans-serif" font-size="48">Replace with doctor image</text>
+</svg>

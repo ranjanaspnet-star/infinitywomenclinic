@@ -1,13 +1,22 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+} from "@/components/ui/dropdown-menu";
+import { services } from "@/data/services";
 
 const navLinks = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/about" },
-  { label: "Services", to: "/services" },
   { label: "Blog", to: "/blog" },
+  { label: "Gallery", to: "/gallery" },
   { label: "Testimonials", to: "/testimonials" },
   { label: "Contact", to: "/contact" },
 ];
@@ -46,6 +55,41 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  className={`inline-flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    location.pathname.startsWith("/services")
+                      ? "bg-accent text-accent-foreground"
+                      : "text-muted-foreground hover:text-foreground hover:bg-accent/50"
+                  }`}
+                >
+                  Services <ChevronDown className="h-4 w-4" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent sideOffset={8} className="min-w-[16rem] border border-border bg-popover">
+                <DropdownMenuLabel>Our Services</DropdownMenuLabel>
+                {services.map((service) => (
+                  <DropdownMenuItem key={service.slug} className="px-0">
+                    <Link
+                      to={`/services/${service.slug}`}
+                      className="block w-full px-4 py-2 text-sm text-foreground hover:bg-accent/60"
+                    >
+                      {service.title}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+                <DropdownMenuSeparator />
+                <DropdownMenuItem className="px-0">
+                  <Link
+                    to="/services"
+                    className="block w-full px-4 py-2 text-sm text-foreground hover:bg-accent/60"
+                  >
+                    View all services
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </nav>
 
           {/* CTA */}
@@ -87,6 +131,28 @@ const Header = () => {
                   {link.label}
                 </Link>
               ))}
+              <div className="px-4 py-3">
+                <div className="text-sm font-semibold text-foreground mb-2">Services</div>
+                <div className="space-y-1">
+                  {services.map((service) => (
+                    <Link
+                      key={service.slug}
+                      to={`/services/${service.slug}`}
+                      onClick={() => setMobileOpen(false)}
+                      className="block rounded-lg px-4 py-2 text-sm text-muted-foreground hover:bg-accent/50 hover:text-foreground"
+                    >
+                      {service.title}
+                    </Link>
+                  ))}
+                  <Link
+                    to="/services"
+                    onClick={() => setMobileOpen(false)}
+                    className="block rounded-lg px-4 py-2 text-sm text-muted-foreground hover:bg-accent/50 hover:text-foreground"
+                  >
+                    View all services
+                  </Link>
+                </div>
+              </div>
               <Link to="/booking" onClick={() => setMobileOpen(false)}>
                 <Button className="w-full mt-2" size="sm">Book Appointment</Button>
               </Link>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -5,8 +6,9 @@ import { Star, ArrowRight, Shield, Heart, Baby, Stethoscope, Calendar, Users } f
 import Layout from "@/components/Layout";
 import SEOHead from "@/components/SEOHead";
 import { useSiteData } from "@/context/SiteDataContext";
-import heroBg from "@/assets/hero-bg.jpg";
-import clinicInterior from "@/assets/clinic-interior.jpg";
+import clinicInterior from "@/images/clinic-interior.webp";
+import doctorAbout from "@/images/doctor-portrait.jpeg";
+import heroBg from "@/images/hero-background.webp";
 
 const services = [
   { icon: Stethoscope, title: "Routine Gynecology", desc: "Comprehensive annual exams, Pap smears, and preventive screenings." },
@@ -17,10 +19,47 @@ const services = [
   { icon: Users, title: "Adolescent Gynecology", desc: "Gentle, age-appropriate care for young women's unique health needs." },
 ];
 
+const carouselItems = [
+  {
+    label: "Clinic Interior",
+    title: "Welcoming, private patient spaces",
+    description: "Our clinic is designed to feel calm and comfortable, with elegant exam rooms and a privacy-first atmosphere for every visit.",
+    imageBackground: clinicInterior,
+    heroTitle: "Calm care spaces designed for comfort",
+    heroDescription: "Enjoy bright, private exam suites and soothing waiting areas built to make every visit feel gentle and reassuring.",
+  },
+  {
+    label: "Doctor Spotlight",
+    title: "Dr. Trishna Taralkar, MBBS, MS - Obstetrics & Gynaecology",
+    description: "19 years of experience as a gynecologist, delivering personalized care and trusted women’s health expertise.",
+    imageBackground: heroBg,
+    imageForeground: doctorAbout,
+    heroTitle: "Meet Dr. Trishna Taralkar",
+    heroDescription: "MBBS, MS - Obstetrics & Gynaecology with 19 years of experience offering compassionate, expert care for every stage of a woman’s health journey.",
+  },
+  {
+    label: "Care Team",
+    title: "Friendly care from an expert team",
+    description: "Our staff supports you from check-in to follow-up, ensuring you feel informed, respected, and supported throughout your appointment.",
+    imageBackground: heroBg,
+    heroTitle: "A warm clinic team focused on your wellbeing",
+    heroDescription: "From reception to follow-up, our team creates a thoughtful, compassionate experience tailored to your needs.",
+  },
+];
+
 const HomePage = () => {
   const { content, testimonials, blogs } = useSiteData();
   const publishedTestimonials = testimonials.filter((t) => t.published).slice(0, 3);
   const publishedBlogs = blogs.filter((b) => b.published).slice(0, 3);
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setActiveSlide((current) => (current + 1) % carouselItems.length);
+    }, 6000);
+
+    return () => window.clearInterval(interval);
+  }, []);
 
   return (
     <Layout>
@@ -30,16 +69,19 @@ const HomePage = () => {
       />
 
       {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center" style={{ backgroundImage: `url(${heroBg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div className="absolute inset-0 bg-background/60" />
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-pink-50">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${carouselItems[activeSlide].imageBackground})` }} />
+        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: `url(${heroBg})` }} />
+        <div className="absolute inset-0 bg-pink-50/30" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,215,235,0.35),transparent_40%)] pointer-events-none" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-2xl">
-            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4 animate-fade-in-up">{content.heroSubtitle}</p>
+          <div className="max-w-2xl py-24 lg:py-32">
+            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4 animate-fade-in-up">{carouselItems[activeSlide].label}</p>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 animate-fade-in-up animation-delay-200">
-              {content.heroTitle}
+              {carouselItems[activeSlide].heroTitle}
             </h1>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8 animate-fade-in-up animation-delay-400">
-              {content.heroDescription}
+              {carouselItems[activeSlide].heroDescription}
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up animation-delay-600">
               <Link to="/booking">
@@ -49,8 +91,29 @@ const HomePage = () => {
                 <Button variant="outline" size="lg">Learn More</Button>
               </Link>
             </div>
+            <div className="mt-12 flex items-center gap-3">
+              {carouselItems.map((_, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  onClick={() => setActiveSlide(index)}
+                  className={`h-3 w-3 rounded-full transition ${
+                    activeSlide === index ? "bg-primary border border-primary" : "bg-white/90 border border-border/60"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
+        {carouselItems[activeSlide].imageForeground && (
+          <div className="absolute bottom-12 right-10 hidden xl:block">
+            <img
+              src={carouselItems[activeSlide].imageForeground}
+              alt={carouselItems[activeSlide].title}
+              className="h-[520px] w-auto max-w-[38vw] rounded-[32px] object-contain shadow-2xl ring-1 ring-white/20"
+            />
+          </div>
+        )}
       </section>
 
       {/* Services */}

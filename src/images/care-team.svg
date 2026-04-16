@@ -1,0 +1,8 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="#FCE8F3" />
+  <circle cx="360" cy="320" r="120" fill="#FFD4E4" />
+  <circle cx="600" cy="300" r="120" fill="#FFC7DD" />
+  <circle cx="840" cy="320" r="120" fill="#FFD4E4" />
+  <rect x="220" y="520" width="760" height="120" rx="60" fill="#FFE7F0" />
+  <text x="50%" y="74%" dominant-baseline="middle" text-anchor="middle" fill="#9F2D5B" font-family="Inter, sans-serif" font-size="48">Replace with team image</text>
+</svg>

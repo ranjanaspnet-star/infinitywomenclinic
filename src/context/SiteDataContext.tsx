@@ -19,6 +19,7 @@ export interface Testimonial {
   rating: number;
   text: string;
   date: string;
+  avatar?: string;
   published: boolean;
 }
 
@@ -103,6 +104,7 @@ const defaultTestimonials: Testimonial[] = [
     rating: 5,
     text: "The care I received at Infinity Women Clinic was exceptional. Dr. Trishna made me feel completely at ease during what can be an anxiety-inducing visit. The staff is warm, professional, and truly caring.",
     date: "2026-03-15",
+    avatar: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
     published: true,
   },
   {
@@ -111,6 +113,7 @@ const defaultTestimonials: Testimonial[] = [
     rating: 5,
     text: "I've been a patient here for three years and couldn't be happier. The clinic is beautiful, wait times are minimal, and the doctors take time to really listen to your concerns.",
     date: "2026-02-20",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
     published: true,
   },
   {
@@ -119,6 +122,7 @@ const defaultTestimonials: Testimonial[] = [
     rating: 5,
     text: "After struggling with PCOS for years, I finally found a doctor who understood my condition. The treatment plan has been life-changing. I highly recommend Infinity Women Clinic.",
     date: "2026-01-10",
+    avatar: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80",
     published: true,
   },
   {
@@ -127,6 +131,7 @@ const defaultTestimonials: Testimonial[] = [
     rating: 5,
     text: "The prenatal care I received was outstanding. From my first appointment to delivery, the entire team was supportive, knowledgeable, and made my pregnancy journey a wonderful experience.",
     date: "2026-03-01",
+    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
     published: true,
   },
 ];
