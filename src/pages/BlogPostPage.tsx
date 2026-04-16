@@ -24,7 +24,7 @@ const BlogPostPage = () => {
 
   return (
     <Layout>
-      <SEOHead title={post.title} description={post.excerpt} />
+      <SEOHead title={post.title} description={post.excerpt} keywords={`${post.title.toLowerCase()}, women's health, gynecology, health article, Infinity Women Clinic`} />
 
       <article className="py-20">
         <div className="container mx-auto px-4 max-w-3xl">

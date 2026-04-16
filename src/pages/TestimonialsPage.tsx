@@ -14,7 +14,7 @@ const TestimonialsPage = () => {
 
   return (
     <Layout>
-      <SEOHead title="Testimonials" description="Read what our patients say about their experience at Infinity Women Clinic." />
+      <SEOHead title="Testimonials" description="Read what our patients say about their experience at Infinity Women Clinic." keywords="patient testimonials, women's clinic reviews, gynecologist feedback, Infinity Women Clinic experience, patient satisfaction" />
 
       <section className="bg-hero-gradient py-20">
         <div className="container mx-auto px-4">

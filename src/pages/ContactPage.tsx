@@ -29,7 +29,7 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <SEOHead title="Contact Us" description="Get in touch with Infinity Women Clinic. Call, email, or visit us today." />
+      <SEOHead title="Contact Us" description="Get in touch with Infinity Women Clinic. Call, email, or visit us today." keywords="contact Infinity Women Clinic, gynecologist contact, women's clinic location, book appointment, gynecological consultation" />
 
       <section className="bg-hero-gradient py-20">
         <div className="container mx-auto px-4 text-center max-w-3xl">

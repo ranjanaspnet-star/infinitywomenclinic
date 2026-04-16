@@ -10,7 +10,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <SEOHead title="Blog" description="Health insights, tips, and articles from Infinity Women Clinic's gynecological experts." />
+      <SEOHead title="Blog" description="Health insights, tips, and articles from Infinity Women Clinic's gynecological experts." keywords="women's health blog, gynecology articles, health tips, women's healthcare insights, gynecological advice" />
 
       <section className="bg-hero-gradient py-20">
         <div className="container mx-auto px-4 text-center max-w-3xl">

@@ -56,7 +56,7 @@ const BookingPage = () => {
 
   return (
     <Layout>
-      <SEOHead title="Book Appointment" description="Schedule your gynecological appointment at Infinity Women Clinic. Easy online booking." />
+      <SEOHead title="Book Appointment" description="Schedule your gynecological appointment at Infinity Women Clinic. Easy online booking." keywords="book gynecological appointment, schedule women's health visit, online booking, gynecologist appointment, Infinity Women Clinic booking" />
 
       <section className="bg-hero-gradient py-20">
         <div className="container mx-auto px-4 text-center max-w-3xl">

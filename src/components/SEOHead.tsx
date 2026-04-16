@@ -5,9 +5,11 @@ interface SEOHeadProps {
   description: string;
   canonical?: string;
   ogImage?: string;
+  keywords?: string;
+  googleSiteVerification?: string;
 }
 
-const SEOHead = ({ title, description, canonical, ogImage }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, ogImage, keywords, googleSiteVerification }: SEOHeadProps) => {
   useEffect(() => {
     document.title = `${title} | Infinity Women Clinic`;
 
@@ -26,6 +28,12 @@ const SEOHead = ({ title, description, canonical, ogImage }: SEOHeadProps) => {
 
     setMeta("description", description);
     setMeta("robots", "index, follow");
+    if (keywords) {
+      setMeta("keywords", keywords);
+    }
+    if (googleSiteVerification) {
+      setMeta("google-site-verification", googleSiteVerification);
+    }
     setMeta("og:title", `${title} | Infinity Women Clinic`, true);
     setMeta("og:description", description, true);
     setMeta("og:type", "website", true);
@@ -46,7 +54,7 @@ const SEOHead = ({ title, description, canonical, ogImage }: SEOHeadProps) => {
       document.head.appendChild(link);
     }
     link.href = url;
-  }, [title, description, canonical, ogImage]);
+  }, [title, description, canonical, ogImage, keywords, googleSiteVerification]);
 
   return null;
 };

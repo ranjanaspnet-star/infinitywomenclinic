@@ -19,7 +19,7 @@ const AboutPage = () => {
 
   return (
     <Layout>
-      <SEOHead title="About Us" description="Learn about Infinity Women Clinic — our mission, values, and dedicated team of gynecological specialists." />
+      <SEOHead title="About Us" description="Learn about Infinity Women Clinic — our mission, values, and dedicated team of gynecological specialists." keywords="about Infinity Women Clinic, gynecologist Dr. Trishna Taralkar, women's health clinic, gynecological specialists, women's healthcare mission" />
       
       {/* Hero */}
       <section className="bg-hero-gradient py-20">

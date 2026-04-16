@@ -73,6 +73,7 @@ const PhotoGalleryPage = () => {
       <SEOHead
         title="Photo Gallery"
         description="Browse the Infinity Women Clinic photo gallery to see our welcoming spaces, expert care environment, and patient-focused clinic design."
+        keywords="Infinity Women Clinic photos, gynecological clinic gallery, women's health clinic images, clinic interior, patient care environment"
       />
 
       <section className="py-20">
