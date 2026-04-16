@@ -53,8 +53,8 @@ const defaultContent: SiteContent = {
   aboutMission: "Our mission is to empower women through comprehensive healthcare services, education, and support, ensuring every patient feels heard, respected, and cared for.",
   clinicPhone: "+1 (555) 123-4567",
   clinicEmail: "care@infinitywomenclinic.com",
-  clinicAddress: "123 Wellness Avenue, Suite 200, Medical District",
-  clinicHours: "Mon-Fri: 8AM-6PM | Sat: 9AM-2PM",
+  clinicAddress: "Unit -403, Lodha Signet, Premier Colony Ground, 1, Kalyan - Shilphata Rd, Dombivli, Kalyan, Maharashtra 421204",
+  clinicHours: "Mon-Sat:  10AM-1PM & 5PM - 8PM",
 };
 
 const defaultBlogs: BlogPost[] = [
@@ -66,7 +66,7 @@ const defaultBlogs: BlogPost[] = [
     content: "Polycystic Ovary Syndrome (PCOS) is one of the most common hormonal disorders among women of reproductive age. It affects approximately 1 in 10 women and can lead to a range of symptoms including irregular periods, excess androgen levels, and polycystic ovaries.\n\nSymptoms of PCOS include irregular menstrual cycles, heavy bleeding, excess hair growth, acne, weight gain, and darkening of the skin. Early diagnosis and treatment can help manage these symptoms effectively.\n\nModern treatment approaches include lifestyle modifications, hormonal birth control, anti-androgen medications, and fertility treatments when needed. At Infinity Women Clinic, we take a holistic approach to PCOS management, combining medical treatment with nutritional counseling and emotional support.",
     image: "",
     category: "Women's Health",
-    author: "Dr. Sarah Mitchell",
+    author: "Dr. Trishna Narendra Taralkar",
     date: "2026-04-10",
     published: true,
   },
@@ -78,7 +78,7 @@ const defaultBlogs: BlogPost[] = [
     content: "Regular gynecological check-ups are crucial for maintaining optimal reproductive and overall health. These visits allow your healthcare provider to detect potential issues early, when they're most treatable.\n\nDuring a routine visit, your gynecologist will perform a pelvic exam, may conduct a Pap smear, and discuss any concerns you may have about your menstrual cycle, contraception, or other health topics.\n\nWe recommend women begin having annual gynecological exams at age 21 or when they become sexually active. These visits are also an opportunity to discuss family planning, screen for sexually transmitted infections, and address any changes in your health.",
     image: "",
     category: "Preventive Care",
-    author: "Dr. Sarah Mitchell",
+    author: "Dr. Trishna Narendra Taralkar",
     date: "2026-04-05",
     published: true,
   },
@@ -90,7 +90,7 @@ const defaultBlogs: BlogPost[] = [
     content: "Planning for pregnancy is an exciting time that comes with many questions. Taking proactive steps before conception can significantly improve your chances of a healthy pregnancy and baby.\n\nKey steps include starting prenatal vitamins with folic acid at least three months before trying to conceive, scheduling a preconception visit with your gynecologist, maintaining a healthy weight, and addressing any chronic health conditions.\n\nAt Infinity Women Clinic, our preconception counseling services help you create a personalized plan for a healthy pregnancy. We'll review your medical history, discuss lifestyle modifications, and ensure you're in the best possible health before conception.",
     image: "",
     category: "Pregnancy",
-    author: "Dr. Sarah Mitchell",
+    author: "Dr. Trishna Narendra Taralkar",
     date: "2026-03-28",
     published: true,
   },
@@ -99,15 +99,15 @@ const defaultBlogs: BlogPost[] = [
 const defaultTestimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Jennifer M.",
+    name: "Ritu Gupta",
     rating: 5,
-    text: "The care I received at Infinity Women Clinic was exceptional. Dr. Mitchell made me feel completely at ease during what can be an anxiety-inducing visit. The staff is warm, professional, and truly caring.",
+    text: "The care I received at Infinity Women Clinic was exceptional. Dr. Trishna made me feel completely at ease during what can be an anxiety-inducing visit. The staff is warm, professional, and truly caring.",
     date: "2026-03-15",
     published: true,
   },
   {
     id: "2",
-    name: "Amanda R.",
+    name: "Asha",
     rating: 5,
     text: "I've been a patient here for three years and couldn't be happier. The clinic is beautiful, wait times are minimal, and the doctors take time to really listen to your concerns.",
     date: "2026-02-20",
@@ -115,7 +115,7 @@ const defaultTestimonials: Testimonial[] = [
   },
   {
     id: "3",
-    name: "Patricia L.",
+    name: "Suchita",
     rating: 5,
     text: "After struggling with PCOS for years, I finally found a doctor who understood my condition. The treatment plan has been life-changing. I highly recommend Infinity Women Clinic.",
     date: "2026-01-10",
@@ -123,7 +123,7 @@ const defaultTestimonials: Testimonial[] = [
   },
   {
     id: "4",
-    name: "Sarah K.",
+    name: "Leena",
     rating: 5,
     text: "The prenatal care I received was outstanding. From my first appointment to delivery, the entire team was supportive, knowledgeable, and made my pregnancy journey a wonderful experience.",
     date: "2026-03-01",

@@ -11,7 +11,7 @@ import { useSiteData, BlogPost } from "@/context/SiteDataContext";
 import { useToast } from "@/hooks/use-toast";
 
 const emptyBlog: Omit<BlogPost, "id"> = {
-  title: "", slug: "", excerpt: "", content: "", image: "", category: "", author: "Dr. Sarah Mitchell", date: new Date().toISOString().split("T")[0], published: false,
+  title: "", slug: "", excerpt: "", content: "", image: "", category: "", author: "Dr. Trishna Narendra Taralkar", date: new Date().toISOString().split("T")[0], published: false,
 };
 
 const AdminBlogs = () => {

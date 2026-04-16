@@ -36,12 +36,12 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <img src={doctorAbout} alt="Our lead gynecologist" loading="lazy" width={800} height={1024} className="rounded-2xl shadow-medium w-full max-w-md mx-auto object-cover aspect-square" />
             <div>
-              <h2 className="font-heading text-3xl font-bold text-foreground mb-4">Meet Dr. Sarah Mitchell</h2>
+              <h2 className="font-heading text-3xl font-bold text-foreground mb-4">Meet Dr. Trishna Narendra Taralkar</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                With over 15 years of experience in obstetrics and gynecology, Dr. Mitchell founded Infinity Women Clinic with a simple vision: to provide exceptional, personalized care in a warm and welcoming environment.
+                With over 15 years of experience in obstetrics and gynecology, Dr. Trishna Narendra Taralkar founded Infinity Women Clinic with a simple vision: to provide exceptional, personalized care in a warm and welcoming environment.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Board-certified and fellowship-trained, Dr. Mitchell specializes in minimally invasive gynecological surgery, high-risk obstetrics, and reproductive endocrinology. She is passionate about empowering women through education and preventive care.
+                Board-certified and fellowship-trained, Dr. Trishna Narendra Taralkar specializes in minimally invasive gynecological surgery, high-risk obstetrics, and reproductive endocrinology. She is passionate about empowering women through education and preventive care.
               </p>
               <div className="bg-accent/50 rounded-xl p-6">
                 <h3 className="font-heading text-lg font-semibold text-foreground mb-2">Our Mission</h3>
