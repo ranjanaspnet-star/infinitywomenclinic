@@ -12,9 +12,10 @@ const TestimonialsPage = () => {
   const visibleTestimonials = showAll ? published : published.slice(0, 8);
   const averageRating = published.length > 0 ? (published.reduce((sum, t) => sum + t.rating, 0) / published.length).toFixed(1) : "0.0";
 
+
   return (
     <Layout>
-      <SEOHead title="Testimonials" description="Read what our patients say about their experience at Infinity Women Clinic." keywords="patient testimonials, women's clinic reviews, gynecologist feedback, Infinity Women Clinic experience, patient satisfaction" />
+      <SEOHead title="Testimonials" description="Read what our patients say about their experience at Infinity Women Clinic." keywords="patient testimonials, best women doctor reviews, top gynecologist clinic Maharashtra reviews, Infinity Women Clinic experience, gynecologist patient feedback, women's health clinic ratings" />
 
       <section className="bg-hero-gradient py-20">
         <div className="container mx-auto px-4">

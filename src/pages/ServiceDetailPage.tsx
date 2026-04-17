@@ -32,7 +32,7 @@ const ServiceDetailPage = () => {
 
   return (
     <Layout>
-      <SEOHead title={service.title} description={service.desc} keywords={`${service.title.toLowerCase()}, gynecological care, women's health, Infinity Women Clinic`} />
+      <SEOHead title={service.title} description={service.desc} keywords={`${service.title.toLowerCase()}, best ${service.title.toLowerCase()} in Maharashtra, top gynecologist in Maharashtra, women's health specialist, Dr. Trishna Taralkar, Infinity Women Clinic`} />
 
       <section className="py-20 bg-hero-gradient">
         <div className="container mx-auto px-4 text-center max-w-3xl">

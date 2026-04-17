@@ -54,7 +54,7 @@ const defaultContent: SiteContent = {
   aboutMission: "Our mission is to empower women through comprehensive healthcare services, education, and support, ensuring every patient feels heard, respected, and cared for.",
   clinicPhone: "+1 (555) 123-4567",
   clinicEmail: "care@infinitywomenclinic.com",
-  clinicAddress: "Unit -403, Lodha Signet, Premier Colony Ground, 1, Kalyan - Shilphata Rd, Dombivli, Kalyan, Maharashtra 421204",
+  clinicAddress: "Unit-403, Lodha Signet, Premier Colony Ground, 1, Kalyan - Shilphata Rd, Dombivli, Kalyan, Maharashtra 421204",
   clinicHours: "Mon-Sat:  10AM-1PM & 5PM - 8PM",
 };
 

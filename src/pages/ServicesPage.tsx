@@ -8,7 +8,7 @@ import { services } from "@/data/services";
 const ServicesPage = () => {
   return (
     <Layout>
-      <SEOHead title="Services" description="Explore comprehensive gynecological services at Infinity Women Clinic — from routine exams to specialized treatments." keywords="gynecological services, women's health services, routine gynecology, prenatal care, reproductive health, menopause care, PCOS management, adolescent gynecology" />
+      <SEOHead title="Services" description="Explore comprehensive gynecological services at Infinity Women Clinic — from routine exams to specialized treatments." keywords="gynecological services, women's health services, best gynecologist in Maharashtra, top women doctor, routine gynecology, prenatal care, reproductive health, menopause care, PCOS management, adolescent gynecology, women's clinic near me" />
       
       <section className="bg-hero-gradient py-20">
         <div className="container mx-auto px-4 text-center max-w-3xl">

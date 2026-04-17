@@ -66,7 +66,7 @@ const HomePage = () => {
       <SEOHead
         title="Home"
         description="Infinity Women Clinic - Expert gynecological care in a warm, supportive environment. Book your appointment today."
-        keywords="gynecology, women's health, gynecologist, prenatal care, menopause care, PCOS management, reproductive health, Dr. Trishna Taralkar, MBBS, MS Obstetrics Gynaecology, women's clinic, gynecological services, female health, obstetrician, women's healthcare"
+        keywords="best gynecologist in Maharashtra, women's health clinic Maharashtra, gynecology, obstetrician, top women doctor, Dr. Trishna Taralkar, Infinity Women Clinic, prenatal care, menopause care, PCOS specialist, reproductive health clinic, women's clinic near me"
       />
 
       {/* Hero */}

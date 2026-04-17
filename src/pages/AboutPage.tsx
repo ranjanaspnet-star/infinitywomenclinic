@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import SEOHead from "@/components/SEOHead";
 import { useSiteData } from "@/context/SiteDataContext";
 import { CheckCircle } from "lucide-react";
-import doctorAbout from "@/assets/doctor-about.jpg";
+import doctorPortrait from "@/images/doctor-portrait.jpeg";
 import clinicInterior from "@/assets/clinic-interior.jpg";
 
 const values = [
@@ -19,7 +19,7 @@ const AboutPage = () => {
 
   return (
     <Layout>
-      <SEOHead title="About Us" description="Learn about Infinity Women Clinic — our mission, values, and dedicated team of gynecological specialists." keywords="about Infinity Women Clinic, gynecologist Dr. Trishna Taralkar, women's health clinic, gynecological specialists, women's healthcare mission" />
+      <SEOHead title="About Us" description="Learn about Infinity Women Clinic — our mission, values, and dedicated team of gynecological specialists." keywords="about Infinity Women Clinic, best gynecologist in Maharashtra, Dr. Trishna Taralkar, women's health clinic Maharashtra, top women doctor, leading gynecology specialist, women's healthcare mission, top 5 doctors Maharashtra" />
       
       {/* Hero */}
       <section className="bg-hero-gradient py-20">
@@ -34,11 +34,18 @@ const AboutPage = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <img src={doctorAbout} alt="Our lead gynecologist" loading="lazy" width={800} height={1024} className="rounded-2xl shadow-medium w-full max-w-md mx-auto object-cover aspect-square" />
+            <img 
+              src={doctorPortrait} 
+              alt="Dr. Trishna Taralkar - Lead Gynecologist" 
+              loading="lazy" 
+              width={800} 
+              height={1024} 
+              className="rounded-2xl shadow-medium w-full max-w-md mx-auto object-cover aspect-square" 
+            />
             <div>
               <h2 className="font-heading text-3xl font-bold text-foreground mb-4">Meet Dr. Trishna Taralkar</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                With over 15 years of experience in obstetrics and gynecology, Dr. Trishna Taralkar founded Infinity Women Clinic with a simple vision: to provide exceptional, personalized care in a warm and welcoming environment.
+                With over 19 years of experience in obstetrics and gynecology, Dr. Trishna Taralkar founded Infinity Women Clinic with a simple vision: to provide exceptional, personalized care in a warm and welcoming environment.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Board-certified and fellowship-trained, Dr. Trishna specializes in minimally invasive gynecological surgery, high-risk obstetrics, and reproductive endocrinology. She is passionate about empowering women through education and preventive care.

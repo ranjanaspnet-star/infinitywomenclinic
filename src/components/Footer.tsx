@@ -53,9 +53,9 @@ const Footer = () => {
               <a href={`mailto:${content.clinicEmail}`} className="flex items-start gap-2 text-sm opacity-70 hover:opacity-100">
                 <Mail className="w-4 h-4 mt-0.5 shrink-0" /> {content.clinicEmail}
               </a>
-              <div className="flex items-start gap-2 text-sm opacity-70">
+              <a href={`https://www.google.com/maps/search/${encodeURIComponent(content.clinicAddress)}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-sm opacity-70 hover:opacity-100">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" /> {content.clinicAddress}
-              </div>
+              </a>
               <div className="flex items-start gap-2 text-sm opacity-70">
                 <Clock className="w-4 h-4 mt-0.5 shrink-0" /> {content.clinicHours}
               </div>
@@ -65,10 +65,22 @@ const Footer = () => {
           {/* Hours */}
           <div>
             <h3 className="font-heading text-lg font-semibold mb-4">Office Hours</h3>
-            <div className="flex flex-col gap-2 text-sm opacity-70">
-              <div className="flex justify-between"><span>Monday - Saturday</span><span>10:00 AM - 1:00 PM (Morning)</span></div>
-              <div className="flex justify-between"><span>Monday - Saturday</span><span>5:00 AM - 8:00 PM (Evening)</span></div>
-              <div className="flex justify-between"><span>Sunday</span><span>Urgent Call Only</span></div>
+            <div className="space-y-3">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/10 hover:border-white/20 transition">
+                <p className="text-xs uppercase tracking-widest opacity-70 mb-1">Monday - Saturday</p>
+                <p className="text-sm font-semibold">10:00 AM - 1:00 PM</p>
+                <p className="text-xs opacity-60">Morning Session</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/10 hover:border-white/20 transition">
+                <p className="text-xs uppercase tracking-widest opacity-70 mb-1">Monday - Saturday</p>
+                <p className="text-sm font-semibold">5:00 PM - 8:00 PM</p>
+                <p className="text-xs opacity-60">Evening Session</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/10 hover:border-white/20 transition">
+                <p className="text-xs uppercase tracking-widest opacity-70 mb-1">Sunday</p>
+                <p className="text-sm font-semibold">Urgent Only</p>
+                <p className="text-xs opacity-60">Emergency Services</p>
+              </div>
             </div>
           </div>
         </div>

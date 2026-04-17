@@ -24,7 +24,7 @@ const BlogPostPage = () => {
 
   return (
     <Layout>
-      <SEOHead title={post.title} description={post.excerpt} keywords={`${post.title.toLowerCase()}, women's health, gynecology, health article, Infinity Women Clinic`} />
+      <SEOHead title={post.title} description={post.excerpt} keywords={`${post.title.toLowerCase()}, best gynecologist in Maharashtra, women's health article, top women doctor, Dr. Trishna Taralkar, reproductive health blog, women's clinic insights, gynecology news`} />
 
       <article className="py-20">
         <div className="container mx-auto px-4 max-w-3xl">

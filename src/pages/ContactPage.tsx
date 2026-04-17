@@ -29,7 +29,7 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <SEOHead title="Contact Us" description="Get in touch with Infinity Women Clinic. Call, email, or visit us today." keywords="contact Infinity Women Clinic, gynecologist contact, women's clinic location, book appointment, gynecological consultation" />
+      <SEOHead title="Contact Us" description="Get in touch with Infinity Women Clinic. Call, email, or visit us today." keywords="contact Infinity Women Clinic, best gynecologist in Maharashtra contact, book appointment with Dr. Trishna Taralkar, women's clinic location Maharashtra, top women doctor phone number, gynecological consultation near me" />
 
       <section className="bg-hero-gradient py-20">
         <div className="container mx-auto px-4 text-center max-w-3xl">
@@ -77,6 +77,38 @@ const ContactPage = () => {
                 </form>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="py-20 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="font-heading text-3xl font-bold text-foreground mb-3">Find Us on the Map</h2>
+            <p className="text-muted-foreground">Visit our clinic location in Dombivli, Kalyan</p>
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-lg h-96 border border-border/50">
+            <iframe
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen={true}
+              referrerPolicy="no-referrer-when-downgrade"
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(content.clinicAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+            />
+          </div>
+          <div className="mt-8 text-center">
+            <a 
+              href={`https://www.google.com/maps/search/${encodeURIComponent(content.clinicAddress)}`} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition"
+            >
+              <MapPin className="w-5 h-5" />
+              Get Directions
+            </a>
           </div>
         </div>
       </section>
