@@ -125,6 +125,12 @@ const HomePage = () => {
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">Comprehensive Women's Healthcare</h2>
             <p className="text-muted-foreground">From routine check-ups to specialized treatments, we offer a full spectrum of gynecological services.</p>
           </div>
+          <div className="max-w-3xl mx-auto text-center mb-14">
+            <h3 className="font-heading text-2xl font-semibold text-foreground mb-4">Trusted gynecology care in Dombivli</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Infinity Women Clinic is led by Dr. Trishna Taralkar, a top-rated gynecology specialist in Maharashtra. Our clinic delivers modern, compassionate care for women of all ages, with a strong focus on personalized treatment and exceptional patient outcomes.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((svc, i) => (
               <Card key={i} className="group hover:shadow-medium transition-all duration-300 border-border/50 bg-card">
@@ -248,6 +254,38 @@ const HomePage = () => {
                 Contact Us
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-background/80">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-10">
+            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">Expert Women’s Health Care</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">Gynecology Care for Complex Women’s Health Needs</h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Our clinic in Dombivli serves women across Thane with advanced care from experienced Gynecologist & Obstetrician Doctors. We treat complex multiple pregnancy issues, provide Mirena / Copper-T insertion services, offer Non descent vaginal hysterectomy (stitchless surgery), and handle White discharge - Leucorrhoea with compassion and expertise.
+            </p>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-2">
+            <div className="rounded-3xl border border-border bg-card p-8 shadow-sm">
+              <h3 className="font-heading text-2xl font-semibold text-foreground mb-4">Specialized Programs</h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li>Gynecologist-led lactation consultation and guidance for new mothers.</li>
+                <li>Laparoscopy for Infertility and advanced reproductive support.</li>
+                <li>Vaginal Rejuvenation Tightening (non surgical) and women’s wellness services.</li>
+                <li>Treatment for sexual dysfunctions -- female, tailored to your needs.</li>
+              </ul>
+            </div>
+            <div className="rounded-3xl border border-border bg-card p-8 shadow-sm">
+              <h3 className="font-heading text-2xl font-semibold text-foreground mb-4">Trusted in Thane and Maharashtra</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Infinity Women Clinic is known for delivering top-rated women’s health care near Thane. Our Gynecologist and Obstetrician Doctors work together to manage complex multiple pregnancy issues, guide Mirena / Copper-T insertion, and support patients through every step of reproductive health.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Patients come to us for Non descent vaginal hysterectomy (stitchless surgery), White discharge - Leucorrhoea care, laparoscopic infertility treatment, and lactation consultation and guidance because we combine expert medical care with a comforting, respectful clinic experience.
+              </p>
+            </div>
           </div>
         </div>
       </section>

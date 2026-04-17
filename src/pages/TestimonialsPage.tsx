@@ -26,6 +26,12 @@ const TestimonialsPage = () => {
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
                 Discover why women choose Infinity Women Clinic for compassionate, expert care. These real patient stories show the comfort, confidence, and successful outcomes we deliver at every visit.
               </p>
+              <div className="rounded-3xl bg-background/80 border border-border/50 p-6 mb-10">
+                <h2 className="font-heading text-2xl font-semibold text-foreground mb-3">Why patients call us one of the best gynecology clinics in Maharashtra</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  Led by Dr. Trishna Taralkar, our clinic in Dombivli brings together expert gynecology, modern facilities, and warm patient support. Our focus is on building trust with every woman who visits, so she feels heard, safe, and empowered.
+                </p>
+              </div>
               <div className="grid gap-4 sm:grid-cols-3">
                 <div className="rounded-3xl bg-card p-6 text-center shadow-sm border border-border/50">
                   <p className="text-3xl font-heading font-bold text-primary">{averageRating}</p>
@@ -40,6 +46,16 @@ const TestimonialsPage = () => {
                   <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground mt-2">Recommend us</p>
                 </div>
               </div>
+            </div>
+
+            <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
+              <h3 className="font-heading text-2xl font-semibold text-foreground mb-3">Comprehensive care in Thane</h3>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                Our Gynecologist & Obstetrician Doctors in Thane handle complex multiple pregnancy issues, Mirena / Copper-T insertion, Non descent vaginal hysterectomy, and White discharge - Leucorrhoea with trusted expertise.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                We also support female sexual dysfunctions, laparoscopy for infertility, lactation consultation and guidance, and vaginal rejuvenation tightening (non surgical) for women who want confidential, women-centered care.
+              </p>
             </div>
 
             <div className="rounded-[32px] bg-background/70 border border-border/50 p-8 shadow-xl backdrop-blur-xl">

@@ -59,8 +59,46 @@ const AboutPage = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-background/75">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">Why Choose Us</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">A leading gynecology clinic in Maharashtra</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Infinity Women Clinic is recognized for delivering high-quality women’s health care in Dombivli and the surrounding Kalyan region. Dr. Trishna Taralkar brings advanced gynecology expertise, warm patient communication, and a focus on outcomes that matter most to women and families.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-background/80">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-10">
+            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">Women's Health Expertise</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">Gynecologist-Led Care for Every Stage</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              As a leading Gynecologist & Obstetrician Doctor in Thane, Dr. Trishna Taralkar provides expert care for complex multiple pregnancy issues, laparoscopic infertility support, Mirena / Copper-T insertion, and stitchless Non descent vaginal hysterectomy. Our clinic also addresses White discharge - Leucorrhoea, sexual dysfunctions -- female, and vaginal rejuvenation tightening (non surgical) with sensitivity.
+            </p>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-3">
+            <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
+              <h3 className="font-heading text-xl font-semibold text-foreground mb-3">High-risk pregnancy care</h3>
+              <p className="text-muted-foreground leading-relaxed">We support complex multiple pregnancy issues and provide personalized monitoring by a skilled Gynecologist & Obstetrician Doctor.</p>
+            </div>
+            <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
+              <h3 className="font-heading text-xl font-semibold text-foreground mb-3">Reproductive wellness</h3>
+              <p className="text-muted-foreground leading-relaxed">From Mirena / Copper-T insertion to laparoscopy for infertility, we deliver advanced women's health solutions.</p>
+            </div>
+            <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
+              <h3 className="font-heading text-xl font-semibold text-foreground mb-3">Women's comfort care</h3>
+              <p className="text-muted-foreground leading-relaxed">Our team treats White discharge - Leucorrhoea, sexual dysfunctions -- female, lactation consultation and vaginal rejuvenation tightening with care and discretion.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Values */}
-      <section className="py-20 bg-warm-gradient">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>

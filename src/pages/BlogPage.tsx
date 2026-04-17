@@ -17,6 +17,18 @@ const BlogPage = () => {
           <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">Our Blog</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">Health Insights & Articles</h1>
           <p className="text-muted-foreground text-lg">Stay informed with the latest in women's health from our expert team.</p>
+          <p className="text-muted-foreground text-base max-w-2xl mx-auto mt-6">
+            Our blog is written for women seeking trusted gynecology advice in Maharashtra. Read articles from the clinic team to learn about PCOS, prenatal care, menopause, and the latest women’s health guidance from Dr. Trishna Taralkar.
+          </p>
+          <div className="mt-10 rounded-3xl bg-card border border-border p-8 shadow-sm">
+            <h2 className="font-heading text-2xl font-semibold text-foreground mb-3">Gynecology topics we cover</h2>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              You’ll find posts that discuss complex multiple pregnancy issues, Mirena / Copper-T insertion, Non descent vaginal hysterectomy (stitchless surgery), White discharge - Leucorrhoea, sexual dysfunctions -- female, laparoscopy for infertility, lactation consultation and guidance, and vaginal rejuvenation tightening (non surgical).
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Our clinic in Thane and Dombivli provides a trusted resource for women looking for Gynecologist-led guidance and real information about women’s reproductive health.
+            </p>
+          </div>
         </div>
       </section>
 

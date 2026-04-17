@@ -63,6 +63,9 @@ const BookingPage = () => {
           <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">Appointments</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">Book Your Appointment</h1>
           <p className="text-muted-foreground text-lg">Schedule a visit in just a few clicks. We'll confirm your appointment within 24 hours.</p>
+          <p className="text-muted-foreground text-base max-w-2xl mx-auto mt-6">
+            Book a consultation with one of the best gynecologists in Maharashtra. Infinity Women Clinic in Dombivli offers trusted care from Dr. Trishna Taralkar and her experienced team, with personalized plans for women's health, prenatal care, PCOS, and menopause support.
+          </p>
         </div>
       </section>
 
@@ -121,6 +124,28 @@ const BookingPage = () => {
               </form>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      <section className="py-16 bg-background/80">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-8">
+            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">Book a Specialist</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">Gynecologist Care in Thane for Complex Conditions</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Book an appointment for care with our leading Gynecologist & Obstetrician Doctors. We support complex multiple pregnancy issues, Mirena / Copper-T insertion, Non descent vaginal hysterectomy (stitchless surgery), White discharge - Leucorrhoea, sexual dysfunctions -- female, laparoscopy for infertility, and lactation consultation and guidance.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
+              <h3 className="font-heading text-lg font-semibold text-foreground mb-2">Advanced Obstetric Care</h3>
+              <p className="text-sm text-muted-foreground">Personalized pregnancy support for Thane-area women with complex multiple pregnancy issues.</p>
+            </div>
+            <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
+              <h3 className="font-heading text-lg font-semibold text-foreground mb-2">Women’s Health Services</h3>
+              <p className="text-sm text-muted-foreground">From White discharge - Leucorrhoea to vaginal rejuvenation tightening, we deliver discreet care.</p>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>

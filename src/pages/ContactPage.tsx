@@ -36,6 +36,9 @@ const ContactPage = () => {
           <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">Contact Us</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">Get in Touch</h1>
           <p className="text-muted-foreground text-lg">We'd love to hear from you. Reach out with any questions or to schedule a visit.</p>
+          <p className="text-muted-foreground text-base max-w-2xl mx-auto mt-6">
+            Contact Infinity Women Clinic in Dombivli for expert women’s health care from Dr. Trishna Taralkar. Our clinic is one of the top gynecology centers in Maharashtra, offering compassionate, confidential consultations and easy appointment scheduling.
+          </p>
         </div>
       </section>
 
@@ -77,6 +80,21 @@ const ContactPage = () => {
                 </form>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-background/80">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-8">
+            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">Specialized Women’s Care</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">Talk to a Gynecologist & Obstetrician Doctor in Thane</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Contact Infinity Women Clinic for expert care in Thane and Dombivli. Our Gynecologist and Obstetrician Doctors manage complex multiple pregnancy issues, Mirena / Copper-T insertion, Non descent vaginal hysterectomy (stitchless surgery), and White discharge - Leucorrhoea with sensitivity.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              We also provide care for sexual dysfunctions -- female, laparoscopy for infertility, lactation consultation and guidance, and vaginal rejuvenation tightening (non surgical) in a discreet clinic environment.
+            </p>
           </div>
         </div>
       </section>

@@ -51,6 +51,18 @@ const ServiceDetailPage = () => {
               </div>
               <h2 className="font-heading text-3xl font-semibold text-foreground mb-4">What to expect</h2>
               <p className="text-muted-foreground leading-relaxed">{service.longDesc}</p>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                Our team is led by Dr. Trishna Taralkar, a leading Gynecologist in Maharashtra, and every service is delivered with expertise, comfort, and privacy in mind.
+              </p>
+              <div className="rounded-3xl bg-background/80 border border-border p-6 mt-6">
+                <h3 className="font-heading text-2xl font-semibold text-foreground mb-3">Additional gynecology care</h3>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  We also provide specialist support for complex multiple pregnancy issues, Mirena / Copper-T insertion, Non descent vaginal hysterectomy (stitchless surgery), and White discharge - Leucorrhoea.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Our clinic in Thane addresses sexual dysfunctions -- female, laparoscopy for infertility, lactation consultation and guidance, and vaginal rejuvenation tightening with a respectful, patient-first approach.
+                </p>
+              </div>
             </div>
             <div className="rounded-3xl border border-border bg-card p-10 shadow-sm">
               <h3 className="font-heading text-2xl font-semibold text-foreground mb-4">Why this service matters</h3>

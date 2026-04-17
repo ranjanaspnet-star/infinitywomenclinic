@@ -85,6 +85,16 @@ const PhotoGalleryPage = () => {
               Explore the spaces that make Infinity Women Clinic a place of comfort, privacy, and trusted care.
               Click any image to enlarge and navigate through the gallery.
             </p>
+            <p className="text-muted-foreground text-base max-w-2xl mx-auto mt-6">
+              See why women in Maharashtra choose our clinic for gynecology and obstetric care. Our gallery highlights the warm, professional environment created for every patient visit.
+            </p>
+            <div className="mt-8 rounded-3xl border border-border bg-card p-8 shadow-sm">
+              <h2 className="font-heading text-2xl font-semibold text-foreground mb-3">Gynecology services shown here</h2>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                Our space supports care for Mirena / Copper-T insertion, care for White discharge - Leucorrhoea, laparoscopy for infertility, and supportive lactation consultation and guidance.</p>
+              <p className="text-muted-foreground leading-relaxed">
+                Patients also visit us for expert management of complex multiple pregnancy issues, Non descent vaginal hysterectomy, sexual dysfunctions -- female, and non surgical vaginal rejuvenation tightening in a discreet clinic environment.</p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
